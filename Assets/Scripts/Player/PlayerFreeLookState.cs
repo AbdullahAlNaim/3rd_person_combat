@@ -6,6 +6,7 @@ public class PlayerFreeLookState : PlayerBaseState
 
     // This line is refactoring instead of keep typeing that string make var
     // after that turn it into a hash with animator becuase its a faster run/read than strings
+    private readonly int FreelOokBlendTreeHash = Animator.StringToHash("FreeLookBlendTree");
     private readonly int FreeLookSpeedHash = Animator.StringToHash("FreeLookSpeed");
     private const float AnimatorDampTime = 0.1f;
     public PlayerFreeLookState(PlayerStateMachine stateMachine) : base(stateMachine)
@@ -15,6 +16,8 @@ public class PlayerFreeLookState : PlayerBaseState
     public override void Enter()
     {
         stateMachine.InputReader.TargetEvent += OnTarget;
+
+        stateMachine.Animator.Play(FreelOokBlendTreeHash);
     }
 
     public override void Tick(float deltaTime)
@@ -52,6 +55,8 @@ public class PlayerFreeLookState : PlayerBaseState
 
     public void OnTarget()
     {
+        if (!stateMachine.Targeter.SelectTarget()) { return; }
+
         stateMachine.SwitchState(new PlayerTargetingState(stateMachine));
     }
 
