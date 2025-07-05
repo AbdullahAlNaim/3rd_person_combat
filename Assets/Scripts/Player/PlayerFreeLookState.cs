@@ -29,7 +29,7 @@ public class PlayerFreeLookState : PlayerBaseState
         // movement.y = 0;
         // movement.z = stateMachine.InputReader.MovementValue.y;
 
-        stateMachine.Controller.Move(movement * stateMachine.FreeLookMovementSpeed * deltaTime);
+        Move(movement * stateMachine.FreeLookMovementSpeed, deltaTime);
 
         if (stateMachine.InputReader.MovementValue == Vector2.zero)
         {
@@ -71,7 +71,7 @@ public class PlayerFreeLookState : PlayerBaseState
         forward.Normalize();
         right.Normalize();
 
-        return forward * stateMachine.InputReader.MovementValue.y + right * stateMachine.InputReader.MovementValue.x;
+        return forward * stateMachine.InputReader.MovementValue.y + right * stateMachine.InputReader.MovementValue.x; 
     }
 
 }

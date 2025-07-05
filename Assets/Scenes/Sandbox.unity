@@ -944,7 +944,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: c08ae83840c4d834880906432084b9b4, type: 3}
   m_Resource: {fileID: 8300000, guid: c08ae83840c4d834880906432084b9b4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.331
+  m_Volume: 0.176
   m_Pitch: 0.62
   Loop: 1
   Mute: 0
@@ -1609,15 +1609,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 65880247073349157, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.41426867
+      value: -1.6284231
       objectReference: {fileID: 0}
     - target: {fileID: 65880247073349157, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0019038916
+      value: -0.529706
       objectReference: {fileID: 0}
     - target: {fileID: 65880247073349157, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.750719
+      value: 3.9984684
       objectReference: {fileID: 0}
     - target: {fileID: 1930212965974632754, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1663,46 +1663,6 @@ PrefabInstance:
       propertyPath: Target.TrackingTarget
       value: 
       objectReference: {fileID: 109002079}
-    - target: {fileID: 2538364270190769916, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
-      propertyPath: Targets.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2538364270190769916, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
-      propertyPath: Targets.Array.data[0].Object
-      value: 
-      objectReference: {fileID: 109002079}
-    - target: {fileID: 2538364270190769916, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
-      propertyPath: Targets.Array.data[0].Radius
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2538364270190769916, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
-      propertyPath: Targets.Array.data[0].Weight
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2538364270190769916, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
-      propertyPath: Targets.Array.data[1].Object
-      value: 
-      objectReference: {fileID: 1061970875}
-    - target: {fileID: 2538364270190769916, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
-      propertyPath: Targets.Array.data[1].Radius
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2538364270190769916, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
-      propertyPath: Targets.Array.data[1].Weight
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2538364270190769916, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
-      propertyPath: Targets.Array.data[2].Object
-      value: 
-      objectReference: {fileID: 1869143804}
-    - target: {fileID: 2538364270190769916, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
-      propertyPath: Targets.Array.data[2].Radius
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2538364270190769916, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
-      propertyPath: Targets.Array.data[2].Weight
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2794357407794954063, guid: 253840034f839d7439ccd6c5610a10ac, type: 3}
       propertyPath: TargetOffset.x
       value: 1.64
