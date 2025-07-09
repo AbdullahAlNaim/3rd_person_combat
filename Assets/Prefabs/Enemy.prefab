@@ -2392,6 +2392,7 @@ GameObject:
   - component: {fileID: 94681701868564269}
   - component: {fileID: 6712251297469399967}
   - component: {fileID: 673400514943696972}
+  - component: {fileID: 440183383997601072}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -2478,6 +2479,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Animator>k__BackingField: {fileID: 7730511156041891582}
+  <Controller>k__BackingField: {fileID: 1427015704994417326}
+  <ForceReceiver>k__BackingField: {fileID: 440183383997601072}
   <PlayerChasingRange>k__BackingField: 10
 --- !u!114 &6712251297469399967
 MonoBehaviour:
@@ -2504,6 +2507,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+--- !u!114 &440183383997601072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8630946919928113831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f119654ee2fc24e984dd1027f247ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1427015704994417326}
+  drag: 0
 --- !u!1 &8702155185971479185
 GameObject:
   m_ObjectHideFlags: 0

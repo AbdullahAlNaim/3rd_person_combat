@@ -25,6 +25,7 @@ public class EnemyIdleState : EnemyBaseState
             // Transition to chasing state
             return;
         }
+        
         stateMachine.Animator.SetFloat(SpeedHash, 0, AnimatorDampTime, deltaTime);
     }
 
